@@ -9,7 +9,7 @@ To implement  T flipflop using verilog and validating their functionality using 
 Quartus prime
 
 **THEORY**
-
+T Flip-Flop is a single input logic circuit that holds or toggles its output according to the input state. Toggling means changing the next state output to complement the current state. T is an abbreviation for Toggle.
 **T Flip-Flop**
 
 T flip-flop is the simplified version of JK flip-flop. It is obtained by connecting the same input ‘T’ to both inputs of JK flip-flop. It operates with only positive clock transitions or negative clock transitions. The circuit diagram of T flip-flop is shown in the following figure.
@@ -36,9 +36,11 @@ From the above characteristic table, we can directly write the next state equati
 */
 
 **RTL LOGIC FOR FLIPFLOPS**
+
 ![Screenshot 2024-12-20 142406](https://github.com/user-attachments/assets/dc993425-fda2-4bbe-9188-3261d757de3f)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
+
 ![Screenshot 2024-12-20 143112](https://github.com/user-attachments/assets/63f062ba-2cde-4ca4-99ca-d5175564ba8d)
 
 **RESULTS**
