@@ -1,4 +1,5 @@
 # T-FLIPFLOP-POSEDGE
+**DATE:6/12/2024**
 
 **AIM:**
 
@@ -36,38 +37,42 @@ From the above characteristic table, we can directly write the next state equati
 
 4.Create nodes for inputs and outputs to generate the timing diagram.
 
-5.For different input combinations generate the timing diagram
+5.For different input combinations generate the timing diagram.
 
 **PROGRAM**
 
-             module t_ff_ (t, clk, rst, q);
-                  input t, clk, rst;
-                  output reg q;
-                  always @(posedge clk or posedge rst) 
-                begin
-                    if (rst)
-                      q <= 0; // Reset the flip-flop
-                    else if (t==0)
-                      q <= q; 
-                     else
-                        q<=~q;
-                  end
-                endmodule
+Program for flipflops and verify its truth table in quartus using Verilog programming.
 
-Developed by: shaiklahir
+Developed by: SHAIK LAHIR
 
-RegisterNumber:24005737
+Register Number: 212224240148
+```
+module T(t, clk, rst, q);
+  input t, clk, rst;
+  output reg q;
 
-**RTL LOGIC FOR FLIPFLOPS**
+  always @(posedge clk or posedge rst) 
+begin
+    if (rst)
+      q <= 0; // Reset the flip-flop
+    else if (t==0)
+      q <= q; 
+     else
+        q<=~q;
+  end
+endmodule
+```
 
-![Screenshot 2025-01-02 223834](https://github.com/user-attachments/assets/d7b06421-f865-439b-a783-f2c473e2673b)
+**RTL DIAGRAM**
 
-
-**TIMING DIGRAMS FOR FLIP FLOPS**
-
-![Screenshot 2025-01-02 223925](https://github.com/user-attachments/assets/2c6f3621-a974-4453-87b4-97791eb91412)
-
+![image](https://github.com/user-attachments/assets/2dcd0bdf-7c44-44bc-9253-281c14633bfd)
 
 
-**RESULTS**
-Thus the program to implement T flipflop using verilog and validating their functionality using their functional tables has been verified successfully.
+**TIMING WAVEFORM**
+
+![image](https://github.com/user-attachments/assets/85242e49-d29d-47a1-8e25-c80f055d2234)
+
+
+**RESULT**
+
+Thus the program to implement a T flipflop using verilog and validating their functionality using their functional tables is successfully completed.
